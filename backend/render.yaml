@@ -2,7 +2,7 @@ services:
   - type: web
     name: splendid-education-api
     runtime: node
-    buildCommand: npm ci --production=false
+    buildCommand: npm install --prefer-offline --no-audit --no-fund
     startCommand: node server.js
     envVars:
       - key: NODE_ENV
