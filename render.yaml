@@ -6,6 +6,8 @@ services:
     buildCommand: npm ci
     startCommand: node server.js
     envVars:
+      - key: NODE_VERSION
+        value: 18.20.7
       - key: NODE_ENV
         value: production
       - key: PORT
